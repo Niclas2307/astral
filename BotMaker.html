@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Discord Bot Maker</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">NCZ Discord Bot Maker</a>
+            <ul>
+                <li><a href="https://ncz.mtdv.me" class="active">Home</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div id="rick" style="text-align: center; display: none;">
+                <h1 style="font-size: 5rem;"> </h1>
+                <video id="rickvid">
+                    <source src="https://r.mtdv.me/cdn/rick.mp4">
+                </video>
+            </div>
+            <div id="cookies" style="text-align: center;">
+                <h1>Cookies</h1>
+                <h4>This site uses cookies. Please accept our <a onclick="cont()" href="#cookies">Cookie Policy</a> to continue</h4>
+                <button id="btn" onclick="cont()" class="button">Accept</button>
+                <button id="btn1" onclick="cont()" class="button">Decline</button>
+            </div>
+        </div>
+        <script>
+            function cont(){
+                document.getElementsByTagName("video")[0].play()
+                document.getElementById("cookies").style.display="none"
+                document.getElementById("rick").style.display=""
+            }
+
+            var noRightClick = document.getElementById("rickvid");
+            noRightClick.addEventListener("contextmenu", e => e.preventDefault());
+        </script>
+    </body>
+</html>
