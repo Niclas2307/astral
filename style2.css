@@ -13,6 +13,16 @@ body
     overflow-x: hidden;
     background: linear-gradient(#2e0077,#5b53a1)
 }
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
 header
 {
     position: absolute;
