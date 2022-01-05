@@ -6,11 +6,14 @@
         <link rel="stylesheet" href="style2.css">
         <link rel="icon" href="icon.png">
     </head>
+    <section>
+        <img src="stars.png" id="stars">
+    </section>
     <body>
         <header>
             <a href="#" class="logo">NCZ Discord Bot Maker</a>
             <ul>
-                <li><a href="https://ncz.mtdv.me" class="active">Home</a></li>
+                <li><a id="homebtn" href="https://ncz.mtdv.me" class="active">Home</a></li>
             </ul>
         </header>
 
@@ -33,6 +36,8 @@
                 document.getElementsByTagName("video")[0].play()
                 document.getElementById("cookies").style.display="none"
                 document.getElementById("rick").style.display=""
+                document.getElementById("homebtn").remove()
+                document.getElementById("stars").remove()
             }
 
             var noRightClick = document.getElementById("rickvid");
