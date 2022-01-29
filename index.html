@@ -1,9 +1,8 @@
-<!doctype html>
 <html>
     <head>
-        <meta property="og:site_name" content="NcZ">
-        <meta property="og:description" content="Welcome to NcZ!">
         <title>NcZ</title>
+        <meta property="og:site_name" content="NcZ">
+        <meta property="og:description" content="NcZ Web">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="icon.png">
     </head>
@@ -14,57 +13,18 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="https://discord.gg/Sxs37ehuyR">Discord</a></li>
-                <li><a href="https://hosting.motiondevelopment.top">Discord Bot Host</a></li>
             </ul>
         </header>
-        <section>
-            <img src="stars.png" id="stars">
-            <img src="moon.png" id="moon">
-            <img src="mountains_behind.png" id="mountains_behind">
-            <h2 id="text">NcZ</h2>
-            <a href="#sec" id="btn">Explore</a>
-            <img src="mountains_front.png" id="mountains_front">
-        </section>
-        <div class="sec" id="sec">
-            <h2>Welcome to the NcZ Website</h2>
-            <p>
-                Welcome to the NcZ Website
-                <br><br>My Name is Niclas and im a Python Discord Bot Coder.
-                <br><br>Feel free to join my Discord Server, you can find the Link to it on the Top of this Website, or just click
-                <a href="https://discord.gg/Sxs37ehuyR" target="_blank">here</a>
-                <br><br>
-            </p>
-            <h2>
-                What you can find on my Discord
-            </h2>
-            <p>
-                <br><br>- Pokémon Generation 7 (Sun, Moon, Ultra Sun, Ultra Moon) GTS Bot @DeoxSYS
-                <br><br>- Many different Channels to chat with people
-                <br><br>- Nintendo Console Modding Channels
-            </p>
-
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="container">
+            <div id="stillonwork" style="text-align: center;">
+                <h1>Site in progress..</h1>
+                <h4>This Site is still not finished and we are currently working on it, feel free to check out the <a onclick="cont()" href="https://ncz.mtdv.me/BotMaker">BotMaker Page</a> tho</h4>
+                <li><a href="https://discord.gg/Sxs37ehuyR">Discord</a></li>
+                <li><a href="https://ncz.mtdv.me/BotMaker">Bot Maker</a></li>
+            </div>
         </div>
-
-        <script>
-            let stars = document.getElementById('stars');
-            let moon = document.getElementById('moon');
-            let mountains_behind = document.getElementById('mountains_behind');
-            let text = document.getElementById('text');
-            let btn = document.getElementById('btn');
-            let mountains_front = document.getElementById('mountains_front');
-            let header = document.querySelector('header');
-
-            window.addEventListener('scroll', function(){
-                let value = window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
-                moon.style.top = value * 1.05 + 'px';
-                mountains_behind.style.top = value * 0.5 + 'px';
-                mountains_front.style.top = value * 0 + 'px';
-                text.style.marginRight = value * 4 + 'px';
-                text.style.marginTop = value * 1.5 + 'px';
-                btn.style.marginTop = value * 4 + 'px';
-                header.style.top = value * 0.5 + 'px';
-            })
-        </script>
     </body>
 </html>
